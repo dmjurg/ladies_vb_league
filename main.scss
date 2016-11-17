@@ -4,13 +4,23 @@ $orange: #ffaa75;
 $green: #a3d962;
 $grey: #808080;
 $title-font: 48px 'Raleway', sans-serif;
-
-
-$margin: 16px;
+$sub-font: 36px 'Raleway', sans-serif;
+$nav-font: 24px 'Raleway', sans-serif;
+$padding: 20px;
 
 body {
   background-color: $white;
   color: $blue;
+}
+li {
+  top: 8px;
+  padding-right: $padding;
+  display: inline-block;
+  font: $nav-font;
+}
+.navbar {
+  margin: 0;
+  padding: 0;
 }
 .intro-section {
   h1 {
@@ -62,10 +72,7 @@ body {
     opacity: 1;
     transform: translateY(300px) translateX(900px) scaleX(1) scaleY(1);
   }
-
-
 }
-
 #gym {
   height: 400px;
   width: 1000px;
@@ -77,14 +84,26 @@ body {
   position: absolute;
   background-color: white;
   border-radius: 50%;
-  animation: rubberBounceDown 5s linear infinite;
+  animation: rubberBounceDown 3s linear infinite;
+}
+h2 {
+  font: $sub-font;
+}
+.about-section {
+    padding-left: $padding * 2;
+    padding-right: $padding * 2;
+}
+.season-section {
+  padding: $padding;
 }
 .join-section {
   background: $orange;
+  padding: $padding;
 }
 .contact-section {
   color: $white;
   background: $grey;
+  padding: $padding;
 }
 
 a {
